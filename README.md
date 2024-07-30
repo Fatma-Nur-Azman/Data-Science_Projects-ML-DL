@@ -1,17 +1,14 @@
-# EDA Projects
+# Machine Learning Projects Repository 🌟🤖
 
-Welcome to the EDA Projects repository! I've been working on various Exploratory Data Analysis (EDA) projects and decided to share them with the community. These projects cover a wide range of datasets and analyses, aiming to provide insights and findings from the data.
+Welcome to the Machine Learning Projects Repository! Here, you'll find a collection of fascinating machine learning projects that demonstrate the power and potential of ML in solving real-world problems. These projects are designed to inspire, educate, and provide practical insights into the world of machine learning. Whether you're a beginner or a seasoned professional, there's something here for everyone.
 
-</br>
+Machine learning is like a baby learning to walk. A baby falls many times while learning to walk, but each time, they get up and try again. At first, they struggle to take steps and lose their balance. However, over time, with repetition and practice, they begin to take more confident steps. Each fall teaches the baby how to maintain balance and walk better.
 
-<img src="https://th.bing.com/th/id/OIG4.qP0zx9xJUs2CJ.ZhCYXB?w=1000&amp;h=600&amp;rs=1&amp;pid=ImgDetMain" alt="eda explanatory data analysis ile midyeden inci bulma olayını metafor olarak görselleştirebilirmisin" class=" nofocus" tabindex="0" aria-label="eda explanatory data analysis ile midyeden inci bulma olayını metafor olarak görselleştirebilirmisin" role="button">
-
-Exploratory Data Analysis is like searching for a pearl within an oyster. Just as a diver must carefully open many oysters to find the hidden pearls, a data analyst must sift through vast amounts of raw data to uncover valuable insights. Each data point is like a grain of sand, seemingly insignificant on its own, but when examined through the lens of EDA, patterns and relationships begin to emerge. Through this process, the analyst polishes and refines the data, transforming it into clear and actionable insights, much like how a pearl is revealed from within the rough exterior of an oyster.
-
+<img src="https://fatmanurazman.vercel.app/ML_project/symbolize%20.png" alt="ML Symbolize" width="700">
 
 ## Project Overview
 
-This repository contains EDA projects focusing on different datasets and domains. Each project includes data cleaning, visualization, and statistical analysis to provide a comprehensive understanding of the data.
+This repository contains various machine learning projects that showcase different algorithms, techniques, and applications. Each project includes detailed documentation, code, and datasets to help you understand and replicate the analyses. The aim is to provide a comprehensive learning resource for anyone interested in machine learning.
 
 ## Getting Started
 
@@ -19,14 +16,8 @@ To get started with these projects, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Fatma-Nur-Azman/EDA_Projects.git
+    git clone https://github.com/Fatma-Nur-Azman/Machine_Learning_Projects_ML.git
     ```
-
-2. Navigate to the project directory:
-    ```bash
-    cd EDA_Projects
-    ```
-
 ## About Me
 
 Hello! I'm Fatma NUr AZMAN, a data analytics and data science enthusiast.
