@@ -1,31 +1,102 @@
-# 👩‍💼 Human Resources EDA Analytics Project
+# Auto Scout Price EDA and Predictions 🚗🔍
 
-![Human Resources Analysis](https://github.com/Fatma-Nur-Azman/EDA_Projects/blob/main/EDA_05_HUMAN_RESOURCES_ANALYSIS/human_resource_.png)
+Welcome! This project involves Exploratory Data Analysis (EDA) and various regression techniques to predict car prices using the Auto Scout dataset.
 
-## 📌 Overview
+![Auto Scout](https://github.com/Fatma-Nur-Azman/Machine_Learning_Projects_ML/blob/main/ML_02_Auto_Scout_Car_Price(Linear-Ridge-Lasso-Elastc)/image.png)
 
-Welcome to the **Human Resources EDA Analytics Project**! This project focuses on analyzing human resources data to uncover trends and insights that can help in making informed decisions regarding employee management and organizational growth. Through comprehensive exploratory data analysis (EDA) and visualization, we delve into various aspects of HR analytics. This project is beneficial for HR professionals, business managers, and anyone interested in workforce data analysis.
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Dataset](#dataset)
+3. [Exploratory Data Analysis](#exploratory-data-analysis)
+    - [Understanding The Data](#understanding-the-data)
+    - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+    - [Detection of Outliers](#detection-of-outliers)
+    - [Correlation](#correlation)
+    - [Encoding](#encoding)
+    - [Feature Selection (ANOVA)](#feature-selection-anova)
+4. [Models](#models)
+    - [Linear Regression Model](#linear-regression-model)
+    - [Ridge Regression Model](#ridge-regression-model)
+    - [Lasso Regression Model](#lasso-regression-model)
+    - [Elastic-Net Regression Model](#elastic-net-regression-model)
+    - [Lasso Regression Model (Without Outliers)](#lasso-regression-model-without-outliers)
+5. [Feature Importance](#feature-importance)
+6. [Customer Regression Model](#customer-regression-model)
+7. [Compare Models Performance](#compare-models-performance)
+8. [Final Model and Model Deployment](#final-model-and-model-deployment)
+9. [Prediction](#prediction)
+10. [Conclusion](#conclusion)
+## Introduction
 
-**TABLE of CONTENTS** 
-- UNDERSTANDING THE DATA
-- ATTRITION RATE ANALYSIS
-- DEPARTMENT AND JOB ROLE ANALYSIS
-- DEMOGRAPHIC ANALYSIS
-- SATISFACTION AND PERFORMANCE ANALYSIS
-- WORK CONDITIONS ANALYSIS
-- CORRELATION ANALYSIS
-- PERFORM ONE-HOT ENCODING
-- PERFORM SCALING (NORMALIZATION & STANDARDIZATION)
-- RECOMMENDATIONS FOR THE COMPANY
-  
-## 📁 Project Structure
+This project provides an in-depth analysis of car prices using a dataset from Auto Scout. The analysis includes data cleaning, visualization, and applying different regression models to predict car prices.
 
-Here's a breakdown of the project structure:
+## Dataset
 
-- `Human_Resources_Project.ipynb`: The core Jupyter Notebook containing the comprehensive exploratory data analysis (EDA).
-- `Human_Resources.csv`: The dataset used for our analysis, filled with insightful data on human resources.
-- `README.md`: You're reading it! This file provides an overview and guidance for the project.
-- `LICENSE`: The licensing details for the project.
+The dataset used in this project is `final_scout_not_dummy.csv`, which contains various features related to cars listed on Auto Scout.
+
+## Exploratory Data Analysis
+
+The EDA section of the project involves:
+- Data Cleaning: Handling missing values, outliers, and data transformations.
+- Visualization: Plotting various features to understand their distribution and relationships.
+- Statistical Analysis: Summarizing data to extract meaningful insights.
+
+### Understanding The Data
+
+Understanding the basic features and distributions in the dataset.
+
+### Exploratory Data Analysis (EDA)
+
+Initial exploration of the dataset and preliminary observations.
+
+### Detection of Outliers
+
+Identification and management of outliers in the dataset.
+
+### Correlation
+
+Examining relationships between features.
+
+### Encoding
+
+Converting categorical data into numerical data.
+
+### Feature Selection (ANOVA)
+
+Selecting important features using ANOVA method.
+
+## Models
+
+Different regression models applied to predict car prices:
+- **Linear Regression Model**
+- **Ridge Regression Model**
+- **Lasso Regression Model**
+- **Elastic-Net Regression Model**
+- **Lasso Regression Model (Without Outliers)**
+## Feature Importance
+
+Ranking the importance of features used in the models.
+
+## Customer Regression Model
+
+Creating a custom regression model for specific needs.
+
+## Compare Models Performance
+
+Comparing the performance of different models.
+
+## Final Model and Model Deployment
+
+Selecting and deploying the best model.
+
+## Prediction
+
+Making price predictions with the selected model.
+
+## Conclusion
+
+Evaluating the overall results of the project.
+
 
 ## 📦 Installation
 
@@ -34,38 +105,21 @@ To get started with this project, follow these steps:
  **Clone the repository:**
  
     ```bash
-     git clone https://github.com/Fatma-Nur-Azman/EDA_Projects.git
-     cd EDA_Projects/EDA_06_HUMAN_RESOURCES_ANALYSIS
+     git clone https://github.com/Fatma-Nur-Azman/Machine_Learning_Projects_ML.git
+     cd Machine_Learning_Projects_ML/ML_02_Auto_Scout_Car_Price(Linear-Ridge-Lasso-Elastc)
+
     ```
 
 ## 🚀 Usage
 
-To explore the human resources data:
+To explore data:
 
 1. **Open the Jupyter Notebook:**
     ```bash
-    jupyter notebook Human_Resources_Project.ipynb
+    jupyter notebook Auto_Scout_Price_EDA_Predictions(Linear_Ridge_Lasso_Regression).ipynb
     ```
 
 2. **Run the cells in the notebook to perform the analysis.**
-
-## 🎯 Goals
-
-This project aims to:
-
-- Analyze employee demographics and trends.
-- Identify key factors affecting employee retention.
-- Provide actionable insights for HR professionals and business managers.
-
-## 🛠️ Tools and Technologies
-
-The project utilizes the following tools and technologies:
-
-- **Python**: The core programming language used for analysis.
-- **Pandas**: For data manipulation and analysis.
-- **NumPy**: For numerical operations.
-- **Matplotlib & Seaborn**: For data visualization.
-- **Jupyter Notebook**: To create and share the analysis.
 
 ## About Me
 
