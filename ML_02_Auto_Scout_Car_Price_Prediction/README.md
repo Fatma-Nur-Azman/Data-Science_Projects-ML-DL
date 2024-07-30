@@ -2,7 +2,7 @@
 
 Welcome! This project involves Exploratory Data Analysis (EDA) and various regression techniques to predict car prices using the Auto Scout dataset.
 
-![Auto Scout](https://github.com/Fatma-Nur-Azman/Machine_Learning_Projects_ML/blob/main/ML_02_Auto_Scout_Car_Price(Linear-Ridge-Lasso-Elastc)/image.png)
+![Auto Scout](https://github.com/Fatma-Nur-Azman/Machine_Learning_Projects_ML/blob/main/ML_02_Auto_Scout_Car_Price_Prediction/image.png)
 
 ## Table of Contents
 1. [Introduction](#introduction)
