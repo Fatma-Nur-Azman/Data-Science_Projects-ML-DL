@@ -1,125 +1,102 @@
-# Auto Scout Price EDA and Predictions 🚗🔍
+# 🍇🍇 Raisin Class Prediction using Logistic Regression, KNN, SVM, and Decision Tree 🍇🤖
 
-Welcome! This project involves Exploratory Data Analysis (EDA) and various regression techniques to predict car prices using the Auto Scout dataset.
-
-![Auto Scout](https://github.com/Fatma-Nur-Azman/Machine_Learning_Projects_ML/blob/main/ML_02_Auto_Scout_Car_Price_Prediction/image.png)
+Welcome to the Raisin Class Prediction project! This project aims to classify two different varieties of raisins (Kecimen and Besni) grown in Turkey using various machine learning techniques.
 
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Dataset](#dataset)
-3. [Exploratory Data Analysis](#exploratory-data-analysis)
-    - [Understanding The Data](#understanding-the-data)
-    - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
-    - [Detection of Outliers](#detection-of-outliers)
-    - [Correlation](#correlation)
-    - [Encoding](#encoding)
-    - [Feature Selection (ANOVA)](#feature-selection-anova)
-4. [Models](#models)
-    - [Linear Regression Model](#linear-regression-model)
-    - [Ridge Regression Model](#ridge-regression-model)
-    - [Lasso Regression Model](#lasso-regression-model)
-    - [Elastic-Net Regression Model](#elastic-net-regression-model)
-    - [Lasso Regression Model (Without Outliers)](#lasso-regression-model-without-outliers)
-5. [Feature Importance](#feature-importance)
-6. [Customer Regression Model](#customer-regression-model)
-7. [Compare Models Performance](#compare-models-performance)
-8. [Final Model and Model Deployment](#final-model-and-model-deployment)
-9. [Prediction](#prediction)
-10. [Conclusion](#conclusion)
+3. [Project Description](#project-description)
+4. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+5. [Modeling](#modeling)
+    - [Logistic Regression](#logistic-regression)
+    - [K-Nearest Neighbors (KNN)](#k-nearest-neighbors-knn)
+    - [Support Vector Machine (SVM)](#support-vector-machine-svm)
+    - [Decision Tree](#decision-tree)
+6. [Model Comparison](#model-comparison)
+7. [Usage](#usage)
+8. [Contributing](#contributing)
+9. [About Me](#about-me)
+10. [License](#license)
+
 ## Introduction
 
-This project provides an in-depth analysis of car prices using a dataset from Auto Scout. The analysis includes data cleaning, visualization, and applying different regression models to predict car prices.
+<img src="https://github.com/Fatma-Nur-Azman/Machine_Learning_Projects_ML/blob/main/ML_03_Raisin_Class_Prediction/raisin_class.png">
 
 ## Dataset
 
-The dataset used in this project is `final_scout_not_dummy.csv`, which contains various features related to cars listed on Auto Scout.
+The dataset used in this project contains 900 samples with 8 features each. The features include:
 
-## Exploratory Data Analysis
+1. **Area**: Number of pixels within the boundaries of the raisin grain.
+2. **Perimeter**: Distance between the boundaries of the raisin grain and the surrounding pixels.
+3. **MajorAxisLength**: Length of the main axis, the longest line that can be drawn on the raisin grain.
+4. **MinorAxisLength**: Length of the small axis, the shortest line that can be drawn on the raisin grain.
+5. **Eccentricity**: Measure of the eccentricity of the ellipse that has the same moments as the raisins.
+6. **ConvexArea**: Number of pixels of the smallest convex shell of the region formed by the raisin grain.
+7. **Extent**: Ratio of the region formed by the raisin grain to the total pixels in the bounding box.
+8. **Class**: Type of raisin grain (Kecimen or Besni).
 
-The EDA section of the project involves:
-- Data Cleaning: Handling missing values, outliers, and data transformations.
-- Visualization: Plotting various features to understand their distribution and relationships.
-- Statistical Analysis: Summarizing data to extract meaningful insights.
+## Project Description
 
-### Understanding The Data
+In this study, a machine vision system was developed to distinguish between two different varieties of raisins (Kecimen and Besni). A total of 900 raisin grains were obtained, with an equal number of samples from each variety. These images were subjected to various preprocessing steps, and 7 morphological feature extraction operations were performed using image processing techniques. The distributions of both raisin varieties on the features were examined and shown in graphs. Later, models were created using Logistic Regression, KNN, SVM, and Decision Tree machine learning techniques, and their performance was evaluated.
 
-Understanding the basic features and distributions in the dataset.
+## Exploratory Data Analysis (EDA)
 
-### Exploratory Data Analysis (EDA)
+The EDA section involves:
+- **Understanding The Data**: Basic statistics and distributions of the dataset.
+- **Detection of Outliers**: Identifying and handling outliers in the data.
+- **Correlation**: Examining the relationships between different features.
 
-Initial exploration of the dataset and preliminary observations.
+## Modeling
 
-### Detection of Outliers
+### Logistic Regression
+Logistic Regression was applied to classify the raisin types. Different preprocessing steps and hyperparameter tuning were performed to improve the model performance.
 
-Identification and management of outliers in the dataset.
+### K-Nearest Neighbors (KNN)
+KNN was used to classify the raisin types based on the nearest neighbors. The model was optimized by tuning the number of neighbors and distance metrics.
 
-### Correlation
+### Support Vector Machine (SVM)
+SVM was employed to find the optimal hyperplane that separates the two classes. Various kernels and parameters were tested to achieve the best performance.
 
-Examining relationships between features.
+### Decision Tree
+Decision Tree classifier was used to create a model that predicts the class based on feature splits. The model was fine-tuned by adjusting the tree depth and other parameters.
 
-### Encoding
+## Model Comparison
 
-Converting categorical data into numerical data.
+The performance of the models was compared using metrics such as accuracy, precision, recall, and F1-score. Confusion matrices and ROC curves were plotted to visualize the results.
 
-### Feature Selection (ANOVA)
+## Usage
 
-Selecting important features using ANOVA method.
+To use this project, follow these steps:
 
-## Models
-
-Different regression models applied to predict car prices:
-- **Linear Regression Model**
-- **Ridge Regression Model**
-- **Lasso Regression Model**
-- **Elastic-Net Regression Model**
-- **Lasso Regression Model (Without Outliers)**
-## Feature Importance
-
-Ranking the importance of features used in the models.
-
-## Customer Regression Model
-
-Creating a custom regression model for specific needs.
-
-## Compare Models Performance
-
-Comparing the performance of different models.
-
-## Final Model and Model Deployment
-
-Selecting and deploying the best model.
-
-## Prediction
-
-Making price predictions with the selected model.
-
-## Conclusion
-
-Evaluating the overall results of the project.
-
-
-## 📦 Installation
-
-To get started with this project, follow these steps:
-
- **Clone the repository:**
- 
+1. Clone the repository:
     ```bash
-     git clone https://github.com/Fatma-Nur-Azman/Machine_Learning_Projects_ML.git
-     cd Machine_Learning_Projects_ML/ML_02_Auto_Scout_Car_Price(Linear-Ridge-Lasso-Elastc)
-
+    git clone https://github.com/Fatma-Nur-Azman/Machine_Learning_Projects_ML.git
     ```
 
-## 🚀 Usage
-
-To explore data:
-
-1. **Open the Jupyter Notebook:**
+2. Navigate to the project directory:
     ```bash
-    jupyter notebook Auto_Scout_Price_EDA_Predictions(Linear_Ridge_Lasso_Regression).ipynb
+    cd ML_03_Raisin_Class_Prediction
     ```
 
-2. **Run the cells in the notebook to perform the analysis.**
+3. Install the required packages:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. Run the Jupyter notebook:
+    ```bash
+    jupyter notebook Logistic-KNN-SVM-Desicion Tree (Raisin_Class_Prediction).ipynb
+    ```
+
+## Contributing
+
+We welcome contributions! If you'd like to contribute, please follow these guidelines:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m 'Add feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Create a new Pull Request
 
 ## About Me
 
@@ -138,23 +115,13 @@ Hello! I'm Fatma NUr AZMAN, a data analytics and data science enthusiast.
 - [LinkedIn](https://www.linkedin.com/in/fatma-nur-azman/)
 - [GitHub](https://github.com/Fatma-Nur-Azman)
 - [Website](https://fatmanurazman.vercel.app/)
-- [Kaggle](https://www.kaggle.com/fnurazman)
-- [Medium](https://medium.com/@azmanfnur)
-- [Tableau Public](https://public.tableau.com/app/profile/fatma.nur.azman/vizzes)
 
-Are you ready to embark on new journeys in the world of data analytics together? 🚴‍♀️🚴‍♂️
+## License
 
-## 📜 License
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-This project is licensed under the MIT License - see the `LICENSE` file for details.
+---
 
-## 🤝 Contributing
+Ready to embark on a journey in the world of machine learning with raisins? 🍇🚀 If you find this repository helpful, don't forget to ⭐ star it!
 
-We welcome contributions! If you have suggestions, improvements, or find bugs, feel free to fork the repository and submit a pull request.
-
-## 🌟 Acknowledgements
-
-- Special thanks to the data providers.
-- Gratitude to the open-source community for providing the tools and resources.
-
-Thank you for visiting our project! We hope you find it insightful and engaging. 👩‍💼
+Happy Coding! 💻✨
