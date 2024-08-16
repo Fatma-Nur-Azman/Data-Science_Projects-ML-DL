@@ -1,4 +1,4 @@
-# Adult Income Prediction Project 💼💰
+# 📝Hand Written Digits Prediction (SVM-DT-RF)✍️
 
 Welcome to the Adult Income Prediction project! This project uses machine learning techniques to classify individuals' income levels based on demographic and employment-related attributes. The goal is to predict whether a person earns more than $50K a year.
 
@@ -20,7 +20,7 @@ Welcome to the Adult Income Prediction project! This project uses machine learni
 
 ## Introduction
 
-<img src="https://github.com/Fatma-Nur-Azman/Machine_Learning_Projects_ML/blob/main/ML_04_Adult_Income_Prediction/adult_.png">
+<img src="https://github.com/Fatma-Nur-Azman/Machine_Learning_Projects_ML/blob/main/ML_05_Hand_Written_Digits/handle.png">
 
 ## Dataset
 
