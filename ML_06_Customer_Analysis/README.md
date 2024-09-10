@@ -1,91 +1,47 @@
-# Adult Income Prediction Project 💼💰
+# 💼Customer Clustering Analysis Project 🔍📊
+💰
 
-Welcome to the Adult Income Prediction project! This project uses machine learning techniques to classify individuals' income levels based on demographic and employment-related attributes. The goal is to predict whether a person earns more than $50K a year.
+Welcome to the Customer Clustering Analysis project! This project focuses on analyzing customer behavior using clustering techniques such as RFM (Recency, Frequency, Monetary), PCA (Principal Component Analysis), KMeans, and Hierarchical Clustering to segment customers and provide targeted business strategies.
+
 
 ## Table of Contents
-1. [Introduction](#introduction)
-2. [Dataset](#dataset)
-3. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
-4. [Feature Engineering](#feature-engineering)
-5. [Models](#models)
-    - [Logistic Regression](#logistic-regression)
-    - [K-Nearest Neighbors (KNN)](#k-nearest-neighbors-knn)
-    - [Support Vector Machine (SVM)](#support-vector-machine-svm)
-6. [Model Comparison](#model-comparison)
-7. [Conclusion](#conclusion)
-8. [Usage](#usage)
-9. [Contributing](#contributing)
-10. [About Me](#about-me)
-11. [License](#license)
+1. [Understanding The Data](#understanding-the-data)
+2. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+3. [Feature Engineering](#feature-engineering)
+4. [Correlation](#correlation)
+5. [Which Product Group Had the Highest Spending?](#which-product-group-had-the-highest-spending)
+6. [Which Campaigns Were Successful?](#which-campaigns-were-successful)
+7. [How Do Spending Patterns Vary by Household Size?](#how-do-spending-patterns-vary-by-household-size)
+8. [How Do Education Levels Impact Spending?](#how-do-education-levels-impact-spending)
+9. [What are the Categories of Expenditure by Education Level?](#what-are-the-categories-of-expenditure-by-education-level)
+10. [What is the Relationship Between Income Level and Expenditure?](#what-is-the-relationship-between-income-level-and-expenditure)
+11. [What is the Most Used Type of Purchase?](#what-is-the-most-used-type-of-purchase)
+12. [How Many Customers Register Each Month?](#how-many-customers-register-each-month)
+13. [Data Preprocessing](#data-preprocessing)
+14. [Dimensionality Reduction](#dimensionality-reduction)
+    - [PCA](#pca)
+15. [Hierarchical Clustering](#hierarchical-clustering)
+16. [KMeans Clustering](#kmeans-clustering)
+17. [Recency, Frequency, Monetary Value (RFM)](#recency-frequency-monetary-value-rfm)
+    - [PCA Clustering](#pca-clustering)
+    - [Conclusion (RFM and PCA)](#conclusion-rfm-and-pca)
+18. [Business Recommendations (RFM and PCA)](#business-recommendations-rfm-and-pca)
+    - [Champions](#champions)
+    - [Loyal Customers](#loyal-customers)
+    - [New Customers](#new-customers)
+    - [Potential Loyalists](#potential-loyalists)
+    - [At Risk](#at-risk)
+    - [Needs Attention](#needs-attention)
+    - [Hibernating](#hibernating)
+19. [Conclusion](#conclusion)
+
+## Understanding The Data
+
+The dataset contains customer demographics, purchasing history, and campaign interactions. Each customer has a unique ID and features like age, income, marital status, and purchasing behavior.
 
 ## Introduction
 
-<img src="https://github.com/Fatma-Nur-Azman/Machine_Learning_Projects_ML/blob/main/ML_04_Adult_Income_Prediction/adult_.png">
-
-## Dataset
-
-- **Source:** UCI Machine Learning Repository
-- **Rows:** 32,561
-- **Columns:** 15
-- **Attributes:** 
-    - Age, Workclass, fnlwgt, Education, Education Number, Marital Status, Occupation, Relationship, Race, Sex, Capital Gain, Capital Loss, Hours per Week, Native Country, Income
-
-## Exploratory Data Analysis (EDA)
-
-The EDA section includes:
-- **Understanding The Data:** Basic statistics and distribution analysis.
-- **Handling Missing Values:** Imputing or removing missing values.
-- **Detection of Outliers:** Identifying and handling outliers in the data.
-- **Correlation Analysis:** Exploring the relationships between different numerical features.
-
-## Feature Engineering
-
-Various feature engineering steps were performed, such as:
-- **Categorical Features:** Encoding categorical variables using OneHotEncoder and OrdinalEncoder.
-- **Numerical Features:** Scaling numerical variables using StandardScaler.
-- **Feature Creation:** Creating new features from existing ones to enhance model performance.
-
-
-## Models
-
-### Logistic Regression
-A Logistic Regression model was built and optimized using GridSearchCV to predict the income level. The model was evaluated using confusion matrices, ROC curves, and precision-recall curves.
-
-### K-Nearest Neighbors (KNN)
-A KNN model was applied, and the optimal number of neighbors was selected using the Elbow Method. The model was evaluated with similar metrics as Logistic Regression.
-
-### Support Vector Machine (SVM)
-The SVM model was trained using different kernels, and hyperparameters were tuned using GridSearchCV. Performance metrics include confusion matrices, ROC curves, and precision-recall curves.
-
-## Model Comparison
-
-The performance of all models was compared based on metrics such as accuracy, precision, recall, and F1-score. The results were visualized using confusion matrices, ROC curves, and precision-recall curves.
-
-## Conclusion
-
-The project concludes by summarizing the performance of each model and discussing potential improvements and future work.
-
-## Usage
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/Fatma-Nur-Azman/Machine_Learning_Projects_ML.git
-    ```
-
-2. Navigate to the project directory:
-    ```bash
-    cd ML_04_Adult_Income_Prediction
-    
-    ```
-
-3. Install the required packages:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4. Run the Jupyter notebook:
-    ```bash
-    jupyter notebook Adult_Income_Prediction (Logistic-KNN-SVM).ipynb
-    ```
+<img src="https://github.com/Fatma-Nur-Azman/Machine_Learning_Projects_ML/blob/main/ML_06_Customer_Analysis/customer.png">
 
 ## Contributing
 
