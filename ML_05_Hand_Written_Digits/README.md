@@ -1,69 +1,43 @@
-# Adult Income Prediction Project 💼💰
+# 📝Hand Written Digits Prediction (SVM-DT-RF)✍️
 
-Welcome to the Adult Income Prediction project! This project uses machine learning techniques to classify individuals' income levels based on demographic and employment-related attributes. The goal is to predict whether a person earns more than $50K a year.
+🔍 Project Overview
+In this project, I tackled the challenge of recognizing handwritten digits using machine learning models, including Support Vector Machines (SVM), Decision Tree, and Random Forest. 
 
 ## Table of Contents
-1. [Introduction](#introduction)
-2. [Dataset](#dataset)
-3. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
-4. [Feature Engineering](#feature-engineering)
-5. [Models](#models)
-    - [Logistic Regression](#logistic-regression)
-    - [K-Nearest Neighbors (KNN)](#k-nearest-neighbors-knn)
-    - [Support Vector Machine (SVM)](#support-vector-machine-svm)
-6. [Model Comparison](#model-comparison)
-7. [Conclusion](#conclusion)
-8. [Usage](#usage)
-9. [Contributing](#contributing)
-10. [About Me](#about-me)
-11. [License](#license)
+1. [Understanding The Data](#understanding-the-data)
+2. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+3. [Vanilla Model Comparison](#vanilla-model-comparison)
+   - [SVC](#svc)
+   - [DT](#dt)
+   - [RF](#rf)
+   - [Vanillin Model Comparison](#vanillin-model-comparison)
+4. [Support Vector Machine (SVM) Classifier](#support-vector-machine-svm-classifier)
+5. [Decision Tree Classification Model](#decision-tree-classification-model)
+6. [Random Forest Classifier](#random-forest-classifier)
+7. [Compare Models Performance](#compare-models-performance)
+8. [Choose the Best Model](#choose-the-best-model)
+9. [Conclusion](#conclusion)
 
 ## Introduction
 
-<img src="https://github.com/Fatma-Nur-Azman/Machine_Learning_Projects_ML/blob/main/ML_04_Adult_Income_Prediction/adult_.png">
+<img src="https://github.com/Fatma-Nur-Azman/Machine_Learning_Projects_ML/blob/main/ML_05_Hand_Written_Digits/handle.png">
 
 ## Dataset
 
-- **Source:** UCI Machine Learning Repository
-- **Rows:** 32,561
-- **Columns:** 15
-- **Attributes:** 
-    - Age, Workclass, fnlwgt, Education, Education Number, Marital Status, Occupation, Relationship, Race, Sex, Capital Gain, Capital Loss, Hours per Week, Native Country, Income
-
-## Exploratory Data Analysis (EDA)
-
-The EDA section includes:
-- **Understanding The Data:** Basic statistics and distribution analysis.
-- **Handling Missing Values:** Imputing or removing missing values.
-- **Detection of Outliers:** Identifying and handling outliers in the data.
-- **Correlation Analysis:** Exploring the relationships between different numerical features.
-
-## Feature Engineering
-
-Various feature engineering steps were performed, such as:
-- **Categorical Features:** Encoding categorical variables using OneHotEncoder and OrdinalEncoder.
-- **Numerical Features:** Scaling numerical variables using StandardScaler.
-- **Feature Creation:** Creating new features from existing ones to enhance model performance.
+- **Source**: UCI Machine Learning Repository - Pen-Based Recognition of Handwritten Digits
+- **Classes**: 10 (Digits 0-9)
+- **Number of Samples**: 10,992 rows
+- **Number of Features**: 16 input features representing the x and y coordinates of handwritten digits
 
 
-## Models
+##  📈 Model Performance
 
-### Logistic Regression
-A Logistic Regression model was built and optimized using GridSearchCV to predict the income level. The model was evaluated using confusion matrices, ROC curves, and precision-recall curves.
+🧠 Support Vector Machine (SVM): Achieved 99% accuracy with a near-perfect F1 score.Best suited for this classification task due to its ability to handle complex data patterns.
 
-### K-Nearest Neighbors (KNN)
-A KNN model was applied, and the optimal number of neighbors was selected using the Elbow Method. The model was evaluated with similar metrics as Logistic Regression.
+🧠 Decision Tree: Balanced accuracy with interpretability but showed signs of overfitting.Provided clear decision-making logic but needed regularization.
 
-### Support Vector Machine (SVM)
-The SVM model was trained using different kernels, and hyperparameters were tuned using GridSearchCV. Performance metrics include confusion matrices, ROC curves, and precision-recall curves.
+🧠 Random Forest: Delivered a 99% accuracy with excellent performance across all classes.A powerful model, balancing accuracy and generalizability.
 
-## Model Comparison
-
-The performance of all models was compared based on metrics such as accuracy, precision, recall, and F1-score. The results were visualized using confusion matrices, ROC curves, and precision-recall curves.
-
-## Conclusion
-
-The project concludes by summarizing the performance of each model and discussing potential improvements and future work.
 
 ## Usage
 1. Clone the repository:
@@ -73,7 +47,7 @@ The project concludes by summarizing the performance of each model and discussin
 
 2. Navigate to the project directory:
     ```bash
-    cd ML_04_Adult_Income_Prediction
+    cd ML_05_Hand_Written_Digits
     
     ```
 
@@ -84,19 +58,8 @@ The project concludes by summarizing the performance of each model and discussin
 
 4. Run the Jupyter notebook:
     ```bash
-    jupyter notebook Adult_Income_Prediction (Logistic-KNN-SVM).ipynb
+    jupyter notebook Hand Written Digits Prediction (SVM-DT-RF ).ipynb
     ```
-
-## Contributing
-
-We welcome contributions! If you'd like to contribute, please follow these guidelines:
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Create a new Pull Request
-
 ## About Me
 
 Hello! I'm Fatma NUr AZMAN, a data analytics and data science enthusiast.
