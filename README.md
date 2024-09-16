@@ -1,4 +1,4 @@
-# Machine Learning Projects Repository 🌟🤖
+# Machine Learning and Deep Learning Projects Repository 🌟🤖
 
 Welcome to the Machine Learning Projects Repository! Here, you'll find a collection of fascinating machine learning projects that demonstrate the power and potential of ML in solving real-world problems. These projects are designed to inspire, educate, and provide practical insights into the world of machine learning. Whether you're a beginner or a seasoned professional, there's something here for everyone.
 
