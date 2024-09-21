@@ -1,8 +1,6 @@
 # Machine Learning and Deep Learning Projects Repository 🌟🤖
 
-Welcome to the Machine Learning Projects Repository! Here, you'll find a collection of fascinating machine learning projects that demonstrate the power and potential of ML in solving real-world problems. These projects are designed to inspire, educate, and provide practical insights into the world of machine learning. Whether you're a beginner or a seasoned professional, there's something here for everyone.
 
-Machine learning is like a baby learning to walk. A baby falls many times while learning to walk, but each time, they get up and try again. At first, they struggle to take steps and lose their balance. However, over time, with repetition and practice, they begin to take more confident steps. Each fall teaches the baby how to maintain balance and walk better.
 
 <img src="https://fatmanurazman.vercel.app/ML_project/symbolize%20.png" alt="ML Symbolize" width="700">
 
