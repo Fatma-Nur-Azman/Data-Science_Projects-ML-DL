@@ -1,82 +1,81 @@
-# 💼Customer Clustering Analysis Project 🔍📊
-💰
+# Flower Recognition Using CNN and Transfer Learning 🌸🤖
 
-Welcome to the Customer Clustering Analysis project! This project focuses on analyzing customer behavior using clustering techniques such as RFM (Recency, Frequency, Monetary), PCA (Principal Component Analysis), KMeans, and Hierarchical Clustering to segment customers and provide targeted business strategies.
+**Dataset Link**: [Flower Recognition Dataset](https://www.kaggle.com/datasets/alxmamaev/flowers-recognition)  
+**Kaggle Notebook**: [Flowers Rec | CNN | 10 Transfer Learning | Part-2 🌻](https://www.kaggle.com/code/fnurazman/flowers-cnn-10-transfer-learning-part-2)  
+**Project Image**:  
+<img src="https://github.com/Fatma-Nur-Azman/Data-Science_Projects-ML-DL/blob/main/ML_07_Flowers_Detection/flowers.jpeg" alt="Flower Recognition" width="600">
 
+## Project Overview
 
-## Table of Contents
-1. [Understanding The Data](#understanding-the-data)
-2. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
-3. [Feature Engineering](#feature-engineering)
-4. [Correlation](#correlation)
-5. [Which Product Group Had the Highest Spending?](#which-product-group-had-the-highest-spending)
-6. [Which Campaigns Were Successful?](#which-campaigns-were-successful)
-7. [How Do Spending Patterns Vary by Household Size?](#how-do-spending-patterns-vary-by-household-size)
-8. [How Do Education Levels Impact Spending?](#how-do-education-levels-impact-spending)
-9. [What are the Categories of Expenditure by Education Level?](#what-are-the-categories-of-expenditure-by-education-level)
-10. [What is the Relationship Between Income Level and Expenditure?](#what-is-the-relationship-between-income-level-and-expenditure)
-11. [What is the Most Used Type of Purchase?](#what-is-the-most-used-type-of-purchase)
-12. [How Many Customers Register Each Month?](#how-many-customers-register-each-month)
-13. [Data Preprocessing](#data-preprocessing)
-14. [Dimensionality Reduction](#dimensionality-reduction)
-    - [PCA](#pca)
-15. [Hierarchical Clustering](#hierarchical-clustering)
-16. [KMeans Clustering](#kmeans-clustering)
-17. [Recency, Frequency, Monetary Value (RFM)](#recency-frequency-monetary-value-rfm)
-    - [PCA Clustering](#pca-clustering)
-    - [Conclusion (RFM and PCA)](#conclusion-rfm-and-pca)
-18. [Business Recommendations (RFM and PCA)](#business-recommendations-rfm-and-pca)
-    - [Champions](#champions)
-    - [Loyal Customers](#loyal-customers)
-    - [New Customers](#new-customers)
-    - [Potential Loyalists](#potential-loyalists)
-    - [At Risk](#at-risk)
-    - [Needs Attention](#needs-attention)
-    - [Hibernating](#hibernating)
-19. [Conclusion](#conclusion)
+This project applies **Convolutional Neural Networks (CNN)** and **Transfer Learning** to classify images of flowers into five categories. The goal is to automate flower identification to support botanical research, education, and conservation efforts using a dataset of flower images sourced online.
 
-## Understanding The Data
+## Importance of Automated Flower Recognition
 
-The dataset contains customer demographics, purchasing history, and campaign interactions. Each customer has a unique ID and features like age, income, marital status, and purchasing behavior.
+Automated recognition systems play a crucial role in:
+- **Cataloging Species**: Helps document and classify plant species efficiently.
+- **Monitoring Biodiversity**: Tracks species distribution and changes in ecosystems.
+- **Ecological Conservation**: Supports conservation efforts by providing accurate identification.
+- **Educational Tools**: Assists in plant classification in botanical education.
+- **Agricultural Planning**: Aids in identifying plant species for garden and crop management.
 
-## Introduction
+## Project Execution Steps
 
-<img src="https://github.com/Fatma-Nur-Azman/Machine_Learning_Projects_ML/blob/main/ML_06_Customer_Analysis/customer.png">
+1. **Image Preprocessing**: Resizing and augmenting images to enhance model performance.
+2. **Normalization**: Standardizing pixel values for consistent training.
+3. **Model Development**: Using CNN for feature extraction and Transfer Learning to improve model accuracy.
+4. **Performance Evaluation**: Iteratively refining the model based on accuracy and other performance metrics.
 
-## Contributing
+## Applications and Impact
 
-We welcome contributions! If you'd like to contribute, please follow these guidelines:
+- **Educational Tools**: Enhancing plant classification in botanical education.
+- **Conservation**: Assisting in the documentation and monitoring of plant species.
+- **Agricultural Planning**: Helping in the identification of plant species for garden management.
 
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Create a new Pull Request
+## About the Dataset
 
-## About Me
+The **Flower Recognition Dataset** contains **4,242 images** of flowers from sources like Flickr, Google Images, and Yandex Images. The dataset comprises five flower categories:
 
-Hello! I'm Fatma NUr AZMAN, a data analytics and data science enthusiast.
+- **Classes**: Daisy, Tulip, Rose, Sunflower, Dandelion
+- **Resolution**: Approx. 320x240 pixels
+- **Total Images**: 4,242
+- **Source**: Scraped from Flickr, Google Images, and Yandex Images
 
-📊 Data Detective: Getting lost in data and turning it into meaningful insights is my hobby. Playing with data and deciphering its language is my superpower!
+The dataset maintains the original proportions of the images, adding complexity and realism to the classification task. It is suitable for both academic research and practical applications in plant recognition. Find the dataset on [Kaggle](https://www.kaggle.com/datasets/alxmamaev/flowers-recognition).
 
-☕ Coffee Lover: I always have a cup of coffee by my side while analyzing data. Good coffee fuels my creativity.
+## Project Summary
 
-🎵 Music Enthusiast: Light jazz music playing in the background keeps me motivated while analyzing data. Music helps me stay focused and productive.
+In this project:
 
-🧩 Puzzle Master: I solve puzzles to keep my mind active. This helps improve my analytical thinking skills.
+- A detailed exploratory analysis was conducted to:
+  - Identify the images in each class.
+  - Determine their dimensions.
+  - Decide whether scaling was needed.
+  - Examine the data distribution across classes.
 
-📧 Contact
+- For transfer learning models:
+  - Base models were created by freezing the pretrained layers.
+  - Smaller versions of transfer learning models were selected due to the small to medium-sized dataset to prevent overfitting.
+  - Even these smaller models required careful tuning to achieve optimal performance.
 
-- [LinkedIn](https://www.linkedin.com/in/fatma-nur-azman/)
-- [GitHub](https://github.com/Fatma-Nur-Azman)
-- [Website](https://fatmanurazman.vercel.app/)
+## Additional Transfer Learning Models
 
-## License
+This study, in collaboration with Duygu Jones, applies a CNN model along with **10 different transfer learning models** to the Flower Recognition dataset. Additional models explored include:
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+- **VGG16**
+- **InceptionV3**
+- **NASNetMobile**
+- **EfficientNetB3**
+- **EfficientNetV2-S**
+- **ConvNeXtTiny**
+
+For further details on these models and their implementation, please refer to the **Kaggle notebook** available at this link: [Flowers Rec | CNN | 10 Transfer Learning | Part-2 🌻](https://www.kaggle.com/code/fnurazman/flowers-cnn-10-transfer-learning-part-2).
+
+## Conclusion
+
+This project demonstrates the power of **CNN** and **Transfer Learning** for flower recognition, contributing to applications in **education**, **conservation**, and **agricultural planning**. The use of multiple models allows for a robust comparison, ensuring that the best-performing model is selected for deployment.
 
 ---
 
-Ready to embark on a journey in the world of machine learning with raisins? 🍇🚀 If you find this repository helpful, don't forget to ⭐ star it!
+If you find this project helpful or interesting, please ⭐ star the repository and explore the Kaggle notebook for more insights!
 
-Happy Coding! 💻✨
+Happy Coding! 🌼✨
