@@ -1,125 +1,67 @@
-# Auto Scout Price EDA and Predictions 🚗🔍
+# Türkiye Yapay Zeka Girişimleri Analiz Platformu 🌟🤖
 
-Welcome! This project involves Exploratory Data Analysis (EDA) and various regression techniques to predict car prices using the Auto Scout dataset.
+Bu proje, Türkiye'deki yapay zeka girişimlerini analiz etmenize, tanımanıza ve bu girişimlerden ilham almanıza yardımcı olmak için geliştirilmiştir. Amacımız, sektördeki gelişmeleri takip etmek isteyenler, iş arayanlar ve yapay zeka alanına ilgi duyan herkes için rehber niteliğinde bir platform oluşturmaktır.
 
-![Auto Scout](https://github.com/Fatma-Nur-Azman/Machine_Learning_Projects_ML/blob/main/ML_02_Auto_Scout_Car_Price_Prediction/image.png)
+---
 
-## Table of Contents
-1. [Introduction](#introduction)
-2. [Dataset](#dataset)
-3. [Exploratory Data Analysis](#exploratory-data-analysis)
-    - [Understanding The Data](#understanding-the-data)
-    - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
-    - [Detection of Outliers](#detection-of-outliers)
-    - [Correlation](#correlation)
-    - [Encoding](#encoding)
-    - [Feature Selection (ANOVA)](#feature-selection-anova)
-4. [Models](#models)
-    - [Linear Regression Model](#linear-regression-model)
-    - [Ridge Regression Model](#ridge-regression-model)
-    - [Lasso Regression Model](#lasso-regression-model)
-    - [Elastic-Net Regression Model](#elastic-net-regression-model)
-    - [Lasso Regression Model (Without Outliers)](#lasso-regression-model-without-outliers)
-5. [Feature Importance](#feature-importance)
-6. [Customer Regression Model](#customer-regression-model)
-7. [Compare Models Performance](#compare-models-performance)
-8. [Final Model and Model Deployment](#final-model-and-model-deployment)
-9. [Prediction](#prediction)
-10. [Conclusion](#conclusion)
-## Introduction
+## Platformda Neler Bulabilirsiniz?
 
-This project provides an in-depth analysis of car prices using a dataset from Auto Scout. The analysis includes data cleaning, visualization, and applying different regression models to predict car prices.
+1. **Kategorilere Göre Analiz**  
+   Girişimlerin hangi alanlarda faaliyet gösterdiğini öğrenebilir ve verileri detaylı istatistiklerle inceleyebilirsiniz.
+   
+2. **Girişimci Bilgileri**  
+   Girişimlerin kurucularını, çalışma alanlarını ve web sitelerine erişim sağlayabilirsiniz.
+   
+3. **İlham ve Bilgi**  
+   Türkiye yapay zeka ekosistemindeki gelişmeleri takip ederek, projeleriniz veya iş fikirleriniz için yeni ilham kaynakları keşfedebilirsiniz.
 
-## Dataset
+---
 
-The dataset used in this project is `final_scout_not_dummy.csv`, which contains various features related to cars listed on Auto Scout.
+## Nasıl Kullanabilirsiniz?
 
-## Exploratory Data Analysis
+1. **Sol menüden istediğiniz sayfayı seçin:**
+   - **Giriş Sayfası**: Proje hakkında genel bilgileri okuyabilirsiniz.
+   - **Kategorilere Göre Girişimci Analizi**: Girişimlerin faaliyet alanlarını inceleyin. Görseller ve istatistiklerle hangi alanların daha popüler olduğunu görün.
+   - **Girişimcilerin Bilgileri**: İlginizi çeken girişimlerin detaylarını öğrenin ve web sitelerine yönlendirilin.
 
-The EDA section of the project involves:
-- Data Cleaning: Handling missing values, outliers, and data transformations.
-- Visualization: Plotting various features to understand their distribution and relationships.
-- Statistical Analysis: Summarizing data to extract meaningful insights.
+2. **Veri Analizi:**
+   - Hangi kategorilerde kaç şirket olduğunu görün.
+   - Şirket istatistiklerini (en yüksek şirket sayısı, ortalama şirket sayısı gibi) inceleyin.
+   - Spesifik kategorilere göre girişim bilgilerini arayın.
 
-### Understanding The Data
+---
 
-Understanding the basic features and distributions in the dataset.
+## Projeden Görseller 📸
 
-### Exploratory Data Analysis (EDA)
+### Giriş Sayfası
+<img src="https://github.com/Fatma-Nur-Azman/Data-Science_Projects-ML-DL/blob/main/DL_10_tr_entrepreneur_analysis/Image1.jpeg" alt="Giriş Sayfası" width="600">
 
-Initial exploration of the dataset and preliminary observations.
+### Kategorilere Göre Girişimci Analizi
+<img src="https://github.com/Fatma-Nur-Azman/Data-Science_Projects-ML-DL/blob/main/DL_10_tr_entrepreneur_analysis/Image2.jpeg" alt="Kategorilere Göre Girişimci Analizi" width="600">
 
-### Detection of Outliers
+### Girişimcilerin Filtrelenmesi
+<img src="https://github.com/Fatma-Nur-Azman/Data-Science_Projects-ML-DL/blob/main/DL_10_tr_entrepreneur_analysis/Image3.jpeg" alt="Girişimcilerin Filtrelenmesi" width="600">
 
-Identification and management of outliers in the dataset.
+---
 
-### Correlation
+## Teknik Detaylar
 
-Examining relationships between features.
+- **Veri Kaynağı**: Türkiye Yapay Zeka İnisiyatifi'nin (TRAI) sunduğu veriler kullanılmıştır.
+- **Araçlar ve Teknolojiler**:
+  - **Python** ve **Pandas** ile veri analizi
+  - **Matplotlib** ve **Seaborn** ile görselleştirme
+  - **Streamlit** ile web uygulaması geliştirme
 
-### Encoding
+---
 
-Converting categorical data into numerical data.
+## Katkıda Bulunmak İster misiniz?
 
-### Feature Selection (ANOVA)
+Eğer bu projeye katkıda bulunmak isterseniz, aşağıdaki adımları izleyebilirsiniz:
 
-Selecting important features using ANOVA method.
-
-## Models
-
-Different regression models applied to predict car prices:
-- **Linear Regression Model**
-- **Ridge Regression Model**
-- **Lasso Regression Model**
-- **Elastic-Net Regression Model**
-- **Lasso Regression Model (Without Outliers)**
-## Feature Importance
-
-Ranking the importance of features used in the models.
-
-## Customer Regression Model
-
-Creating a custom regression model for specific needs.
-
-## Compare Models Performance
-
-Comparing the performance of different models.
-
-## Final Model and Model Deployment
-
-Selecting and deploying the best model.
-
-## Prediction
-
-Making price predictions with the selected model.
-
-## Conclusion
-
-Evaluating the overall results of the project.
-
-
-## 📦 Installation
-
-To get started with this project, follow these steps:
-
- **Clone the repository:**
- 
-    ```bash
-     git clone https://github.com/Fatma-Nur-Azman/Machine_Learning_Projects_ML.git
-     cd Machine_Learning_Projects_ML/ML_02_Auto_Scout_Car_Price(Linear-Ridge-Lasso-Elastc)
-
-    ```
-
-## 🚀 Usage
-
-To explore data:
-
-1. **Open the Jupyter Notebook:**
-    ```bash
-    jupyter notebook Auto_Scout_Price_EDA_Predictions(Linear_Ridge_Lasso_Regression).ipynb
-    ```
-
-2. **Run the cells in the notebook to perform the analysis.**
+1. Bu depoyu fork'layın.
+2. Yeni bir özellik eklemek için bir dal oluşturun:
+   ```bash
+   git checkout -b feature/your-feature
 
 ## About Me
 
