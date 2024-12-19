@@ -1,101 +1,63 @@
-# Adult Income Prediction Project 💼💰
+# Soldier Race Project
 
-Welcome to the Adult Income Prediction project! This project uses machine learning techniques to classify individuals' income levels based on demographic and employment-related attributes. The goal is to predict whether a person earns more than $50K a year.
-
-## Table of Contents
-1. [Introduction](#introduction)
-2. [Dataset](#dataset)
-3. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
-4. [Feature Engineering](#feature-engineering)
-5. [Models](#models)
-    - [Logistic Regression](#logistic-regression)
-    - [K-Nearest Neighbors (KNN)](#k-nearest-neighbors-knn)
-    - [Support Vector Machine (SVM)](#support-vector-machine-svm)
-6. [Model Comparison](#model-comparison)
-7. [Conclusion](#conclusion)
-8. [Usage](#usage)
-9. [Contributing](#contributing)
-10. [About Me](#about-me)
-11. [License](#license)
+## 📖 Overview
+The **Soldier Race Project** is a machine learning-driven analysis focused on predicting and analyzing ethnicity and anthropometric measurements in a military context. Using advanced algorithms and comprehensive datasets, this project explores patterns and applications in ethnic classification and military design.
 
 ## Introduction
 
-<img src="https://github.com/Fatma-Nur-Azman/Machine_Learning_Projects_ML/blob/main/ML_04_Adult_Income_Prediction/adult_.png">
+<img src="https://github.com/Fatma-Nur-Azman/Data-Science_Projects-ML-DL/blob/main/ML_07_Soldier_Race_Project/soldier_race.png">
 
-## Dataset
+## 🌟 Features
+- **Anthropometric Data Analysis**: Leveraging extensive body measurements.
+- **Ethnic Prediction Models**: Predict ethnicity using state-of-the-art algorithms.
+- **Military Equipment Optimization**: Insights for designing military gear and equipment.
+- **Advanced Visualization**: Real-time charts, confusion matrices, and performance metrics.
 
-- **Source:** UCI Machine Learning Repository
-- **Rows:** 32,561
-- **Columns:** 15
-- **Attributes:** 
-    - Age, Workclass, fnlwgt, Education, Education Number, Marital Status, Occupation, Relationship, Race, Sex, Capital Gain, Capital Loss, Hours per Week, Native Country, Income
+## 🧰 Technologies Used
+- **Programming Language**: Python 3.8+
+- **Machine Learning Frameworks**:
+  - Scikit-learn: Used for implementing Logistic Regression, Decision Trees, and Support Vector Machines.
+  - XGBoost: Employed for advanced boosting methods to enhance classification accuracy.
+  - Random Forest: Utilized for robust ensemble learning and handling large feature sets.
+- **Visualization Tools**: Matplotlib, Seaborn, Yellowbrick
+- **Pipeline Optimization**: GridSearchCV for hyperparameter tuning, StratifiedKFold for balanced cross-validation.
 
-## Exploratory Data Analysis (EDA)
+## 🔬 Models and Methods
+- **Logistic Regression**: 
+  - Provides a simple yet effective baseline for binary and multi-class classification.
+  - Includes class balancing and feature scaling within a `Pipeline` for optimal preprocessing.
 
-The EDA section includes:
-- **Understanding The Data:** Basic statistics and distribution analysis.
-- **Handling Missing Values:** Imputing or removing missing values.
-- **Detection of Outliers:** Identifying and handling outliers in the data.
-- **Correlation Analysis:** Exploring the relationships between different numerical features.
+- **Random Forest**:
+  - An ensemble-based method that aggregates predictions from multiple decision trees.
+  - Reduces overfitting and improves generalization, particularly effective with unbalanced data.
 
-## Feature Engineering
+- **Support Vector Machines (SVC)**:
+  - Uses high-dimensional kernel transformations to achieve linear separability in complex datasets.
+  - Includes GridSearchCV for tuning hyperparameters like the kernel type and regularization strength.
 
-Various feature engineering steps were performed, such as:
-- **Categorical Features:** Encoding categorical variables using OneHotEncoder and OrdinalEncoder.
-- **Numerical Features:** Scaling numerical variables using StandardScaler.
-- **Feature Creation:** Creating new features from existing ones to enhance model performance.
+- **XGBoost**:
+  - Gradient boosting framework designed for high performance and efficiency.
+  - Handles missing data and provides regularization to prevent overfitting.
+  - Applied for ethnicity prediction tasks requiring fine-tuned performance.
 
+- **Evaluation Metrics**:
+  - Confusion Matrices to visualize classification accuracy.
+  - Precision, Recall, and F1 Score for a comprehensive performance analysis.
+  - ROC and Precision-Recall curves for threshold-based evaluation.
 
-## Models
+## 📂 Project Structure
+```
+├── data/                 # Raw and processed datasets
+├── notebooks/            # Jupyter notebooks for analysis
+├── models/               # Saved machine learning models
+├── src/                  # Source code for data processing and training
+├── outputs/              # Results and visualizations
+└── README.md             # Project documentation
+```
 
-### Logistic Regression
-A Logistic Regression model was built and optimized using GridSearchCV to predict the income level. The model was evaluated using confusion matrices, ROC curves, and precision-recall curves.
-
-### K-Nearest Neighbors (KNN)
-A KNN model was applied, and the optimal number of neighbors was selected using the Elbow Method. The model was evaluated with similar metrics as Logistic Regression.
-
-### Support Vector Machine (SVM)
-The SVM model was trained using different kernels, and hyperparameters were tuned using GridSearchCV. Performance metrics include confusion matrices, ROC curves, and precision-recall curves.
-
-## Model Comparison
-
-The performance of all models was compared based on metrics such as accuracy, precision, recall, and F1-score. The results were visualized using confusion matrices, ROC curves, and precision-recall curves.
-
-## Conclusion
-
-The project concludes by summarizing the performance of each model and discussing potential improvements and future work.
-
-## Usage
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/Fatma-Nur-Azman/Machine_Learning_Projects_ML.git
-    ```
-
-2. Navigate to the project directory:
-    ```bash
-    cd ML_04_Adult_Income_Prediction
-    
-    ```
-
-3. Install the required packages:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4. Run the Jupyter notebook:
-    ```bash
-    jupyter notebook Adult_Income_Prediction (Logistic-KNN-SVM).ipynb
-    ```
-
-## Contributing
-
-We welcome contributions! If you'd like to contribute, please follow these guidelines:
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Create a new Pull Request
+## 📊 Results
+- Achieved **high accuracy** and recall for ethnic classification.
+- Detailed performance metrics and confusion matrices available in the `outputs/` directory.
 
 ## About Me
 
