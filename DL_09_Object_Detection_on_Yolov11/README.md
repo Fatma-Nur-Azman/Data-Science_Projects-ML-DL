@@ -1,6 +1,6 @@
 # 🏠🚀 YOLOv11 Object Detection on Indoor 🎥
 
-**Kaggle Notebook**: [Flowers Rec | CNN | 10 Transfer Learning | Part-2 🌻](https://www.kaggle.com/code/fnurazman/yolov11-object-detection-on-indoor)  
+**Kaggle Notebook**: [FObject Detection on Indoor](https://www.kaggle.com/code/fnurazman/yolov11-object-detection-on-indoor)  
 **Project Image**:  
 <img src="https://github.com/Fatma-Nur-Azman/Data-Science_Projects-ML-DL/blob/main/DL_09_Object_Detection_on_Yolov11/Indoor.png" alt="Flower Recognition" width="600">
 
